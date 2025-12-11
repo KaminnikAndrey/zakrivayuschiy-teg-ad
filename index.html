@@ -399,6 +399,13 @@
     </button>
   </form>
 </dialog>
+<script>
+  // Предотвращаем стандартное поведение формы
+  document.getElementById('modalForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    document.getElementById('saveDialog').close();
+  });
+</script>
 
 <script src="./scripts/heart.js"></script>
 </body>
