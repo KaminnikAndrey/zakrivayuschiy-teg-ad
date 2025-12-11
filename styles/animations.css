@@ -1,11 +1,53 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
+/* styles/animations.css */
 
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
+@keyframes core-coloring {
+    100% {
+        fill: var(--heart-center-active);
+    }
+}
 
-*/
+@keyframes fill-coloring {
+    100% {
+        fill: var(--heart-fill-active);
+    }
+}
+
+@keyframes outline-coloring {
+    100% {
+        fill: var(--heart-outline-active);
+    }
+}
+
+@keyframes heart-scaling {
+    100% {
+        transform: scale(1.5);
+        transform-origin: center;
+    }
+}
+
+@keyframes sparks-coloring {
+    100% {
+        fill: var(--heart-sparks-color);
+    }
+}
+
+/* Анимации для сердечка */
+.heart-icon.is-liked {
+    animation: heart-scaling 0.3s 0.1s ease-in;
+}
+
+.heart-icon.is-liked .heart-center {
+    animation: core-coloring 0.3s linear forwards;
+}
+
+.heart-icon.is-liked .heart-fill {
+    animation: fill-coloring 0.3s 0.05s linear forwards;
+}
+
+.heart-icon.is-liked .heart-outline {
+    animation: outline-coloring 0.3s 0.06s linear forwards;
+}
+
+.heart-icon.is-liked .heart-sparks {
+    animation: sparks-coloring 0.3s 0.3s ease-in;
+}

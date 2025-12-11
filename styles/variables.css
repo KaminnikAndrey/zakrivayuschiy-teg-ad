@@ -1,1 +1,67 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+/* styles/variables.css */
+
+:root {
+    /* Шрифты */
+    --main-font: 'Inter', sans-serif;
+    --accent-font: 'PressStart2P', fantasy;
+
+    /* Веса шрифтов */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* Цвета (светлая тема) */
+    --bg-color: #ffffff;
+    --accent-color: #000000;
+    --accent-color-transparent: rgb(0 0 0 / 60%);
+    --btn-text-color: #ffffff;
+
+    /* Сердце SVG */
+    --heart-sparks-color: #ff0000;
+    --heart-sparks-transparent: rgb(255 0 0 / 0%);
+    --heart-outline-color: #000000;
+    --heart-center-color: #000000;
+    --heart-center-transparent: rgb(0 0 0 / 0%);
+    --heart-fill-color: #000000;
+    --heart-fill-transparent: rgb(0 0 0 / 0%);
+    --heart-outline-active: #ff0000;
+    --heart-center-active: #ff0000;
+    --heart-fill-active: #ff0000;
+
+    /* Градиенты для фона */
+    --gradient-line-color: #d3d3d3;
+    --gradient-line-transparent: rgb(211 211 211 / 0%);
+    --gradient-start-color: #e7e7e7;
+    --gradient-end-color: #1a1a1a;
+
+    /* Градиенты */
+    --gradient-horizontal: repeating-linear-gradient(
+            to right,
+            var(--gradient-line-transparent) 0,
+            var(--gradient-line-color) 1px,
+            var(--gradient-line-color) 2px,
+            var(--gradient-line-transparent) 3px,
+            var(--gradient-line-transparent) 4px
+    );
+
+    --gradient-vertical: repeating-linear-gradient(
+            to bottom,
+            var(--gradient-line-transparent) 0,
+            var(--gradient-line-color) 1px,
+            var(--gradient-line-color) 2px,
+            var(--gradient-line-transparent) 3px,
+            var(--gradient-line-transparent) 4px
+    );
+
+    --gradient-main: linear-gradient(
+            to bottom,
+            var(--gradient-start-color) 0.01%,
+            var(--gradient-end-color)
+    );
+
+    /* Анимации */
+    --transition-time: 0.3s;
+    --transition-func: ease;
+
+    /* Границы */
+    --border-size: 2px;
+}

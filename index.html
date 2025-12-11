@@ -1,18 +1,405 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Закрывающий тег</title>
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-  </head>
-  <body class="page">
-    <header class="header"></header>
-    <main></main>
-    <script src="./scripts/like.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Закрывающий тег</title>
+  <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/variables.css" />
+  <link rel="stylesheet" href="./styles/globals.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="./favicon.png">
+
+</head>
+<body class="page">
+<header class="page-header content-block">
+  <h1 class="page-header__title">
+    <span class="page-header__title-accent" aria-hidden="true">&lt;/html&gt;</span>
+    Закрывающий тег
+  </h1>
+</header>
+<main>
+  <section class="posts content-block">
+    <h2 class="visually-hidden">Основной контент</h2>
+
+    <article class="post">
+      <h2 class="post__header">Фритрек и нулевой спринт: Подготовка к работе</h2>
+      <div class="post__image-wrapper">
+        <span class="post__image-label">&lt;/HTML&gt;</span>
+        <img
+                class="post__image img-filter__bright"
+                src="images/image.png"
+                alt="Фотография столба с надписью START на фоне леса."
+        />
+      </div>
+      <div class="post__content">
+        <div class="post__text-wrapper">
+          <p class="post__text">
+            Это было самое начало пути. На этом этапе важно было
+            проникнуться основами и настроиться на учёбу. И, возможно,
+            подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p class="post__text">
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+        </div>
+        <div class="post__actions">
+          <button class="post__heart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" class="heart-icon">
+              <g class="heart-group">
+                <path fill="none" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" class="heart-outline"/>
+                <path fill="none" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" class="heart-fill"/>
+                <path d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" class="heart-center"/>
+              </g>
+              <path fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" class="heart-sparks"/>
+            </svg>
+          </button>
+          <button class="post__like-btn main-btn">
+            <span class="btn-label">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <h2 class="post__header">1 спринт: Я — чистый лист</h2>
+      <div class="post__image-wrapper">
+        <span class="post__image-label">&lt;/HTML&gt;</span>
+        <img
+                class="post__image img-filter__gray"
+                src="images/image.png"
+                alt="Фотография чистого блокнота, календаря и часов."
+        />
+      </div>
+      <div class="post__content">
+        <div class="post__text-wrapper">
+          <p class="post__text">
+            На первых этапах мы работали со страхами и сомнениями, которые
+            часто испытывают новички. Один из них — страх перед чистым
+            листом. Это, конечно же, намного сложнее, чем боязнь куска
+            бумаги. Часто за этим ощущением скрываются более глубокие
+            вопросы: с чего начать? а вдруг будет слишком сложно? что, если
+            я не справлюсь?
+          </p>
+          <p class="post__text">
+            Первый проект действительно вызвал оторопь. Я не ожидал, что с
+            самого начала нам дадут такой крупный (на мой взгляд новичка)
+            проект. Но было в нём нужно было использовать лишь то, что мы
+            уже прошли, поэтому, засучив рукава, я принялся верстать и
+            осилил проект!
+          </p>
+        </div>
+        <div class="post__actions">
+          <button class="post__heart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" class="heart-icon">
+              <g class="heart-group">
+                <path fill="none" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" class="heart-outline"/>
+                <path fill="none" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" class="heart-fill"/>
+                <path d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" class="heart-center"/>
+              </g>
+              <path fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" class="heart-sparks"/>
+            </svg>
+          </button>
+          <button class="post__like-btn main-btn">
+            <span class="btn-label">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <h2 class="post__header">1 спринт: А если не получится?</h2>
+      <div class="post__image-wrapper">
+        <span class="post__image-label">&lt;CSS&gt;</span>
+        <img
+                class="post__image img-filter__sepia"
+                src="images/image.png"
+                alt="Ночная фотография здания с надписью PANIC."
+        />
+      </div>
+      <div class="post__content">
+        <div class="post__text-wrapper">
+          <p class="post__text">
+            Первый проект — позади! Но это всё ещё самое начало пути.
+            Радость могла быстро померкнуть и смениться ожиданием провала.
+            Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
+          </p>
+          <p class="post__text">
+            После того, как я закончил первый проект, я подумал, что
+            обучение достаточно простое и у меня есть много времени для
+            выполнения следующего проекта... Я ошибался.
+          </p>
+        </div>
+        <div class="post__actions">
+          <button class="post__heart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" class="heart-icon">
+              <g class="heart-group">
+                <path fill="none" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" class="heart-outline"/>
+                <path fill="none" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" class="heart-fill"/>
+                <path d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" class="heart-center"/>
+              </g>
+              <path fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" class="heart-sparks"/>
+            </svg>
+          </button>
+          <button class="post__like-btn main-btn">
+            <span class="btn-label">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <h2 class="post__header">2 спринт: Погоня за идеалом</h2>
+      <div class="post__image-wrapper">
+        <span class="post__image-label">&lt;desigions&gt;</span>
+        <img
+                class="post__image img-filter__invert"
+                src="images/image.png"
+                alt="Изображение инструмента уровень с пузырьком по-середине."
+        />
+      </div>
+      <div class="post__content">
+        <div class="post__text-wrapper">
+          <p class="post__text">
+            На этом этапе вы уже достаточно разбирались в основах вёрстки,
+            чтобы понять, как много ещё впереди. Вы могли попытаться
+            погнаться за идеалом и понять, что он недостижим. А, может, вы
+            вовсе и не подвержены перфекционизму и вместо того, чтобы
+            сделать идеально, старались просто сделать.
+          </p>
+          <p class="post__text">
+            После изучения учебного материала и дополнительных статей,
+            всегда хочется попробовать использовать новые технологии,
+            добавить в проект новую интересную штуку. Главное не забывать о
+            менеджменте времени и понимать, что при использовании новых
+            технологий придётся много гуглить, спрашивать вопросы и
+            привыкать!
+          </p>
+        </div>
+        <div class="post__actions">
+          <button class="post__heart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" class="heart-icon">
+              <g class="heart-group">
+                <path fill="none" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" class="heart-outline"/>
+                <path fill="none" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" class="heart-fill"/>
+                <path d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" class="heart-center"/>
+              </g>
+              <path fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" class="heart-sparks"/>
+            </svg>
+          </button>
+          <button class="post__like-btn main-btn">
+            <span class="btn-label">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <h2 class="post__header">2 спринт: О тех, кто рядом</h2>
+      <div class="post__image-wrapper">
+        <span class="post__image-label">care</span>
+        <img
+                class="post__image img-filter__blur"
+                src="images/image.png"
+                alt="Фотография двух женщин, обсуждающих схему, лежащую на столе."
+        />
+      </div>
+      <div class="post__content">
+        <div class="post__text-wrapper">
+          <p class="post__text">
+            Всё это время вы были не одиноки (хотя, возможно, иногда и
+            чувствовали, что одни против целого мира). Вас окружали
+            одногруппники, команда сопровождения и просто близкие люди,
+            которым можно пожаловаться, если очередной макет просто так не
+            поддавался. Осваивать что-то новое легче, когда рядом есть
+            единомышленники, не правда ли?
+          </p>
+          <p class="post__text">
+            Следующий проект был достаточно ёмким и в нем было много новых
+            вещей, о которых я не знал. Благо на помощь всегда приходили
+            наставники и другие студенты группы. Спасибо Вам, без Вас я бы
+            не справился!
+          </p>
+        </div>
+        <div class="post__actions">
+          <button class="post__heart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" class="heart-icon">
+              <g class="heart-group">
+                <path fill="none" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" class="heart-outline"/>
+                <path fill="none" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" class="heart-fill"/>
+                <path d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" class="heart-center"/>
+              </g>
+              <path fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" class="heart-sparks"/>
+            </svg>
+          </button>
+          <button class="post__like-btn main-btn">
+            <span class="btn-label">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <h2 class="post__header">3 спринт: Обходные стратегии</h2>
+      <div class="post__image-wrapper">
+        <span class="post__image-label">&lt;support&gt;</span>
+        <img
+                class="post__image img-filter__multiple"
+                src="images/image.png"
+                alt="Фотография дома, который стоит под сильным углом и уходит за горизонт."
+        />
+      </div>
+      <div class="post__content">
+        <div class="post__text-wrapper">
+          <p class="post__text">
+            На этом курсе вы постоянно решали разные задачи. В какой-то
+            момент вам могло показаться, что решения просто иссякли. Значит,
+            пришло время посмотреть на задачу под другим углом.
+          </p>
+          <p class="post__text">
+            Очень часто при выполнении проекта ты выбираешь один подход к
+            написанию кода и структуре, но в ходе выполнения понимаешь, что
+            лучше было бы выбрать другой подход, например вместо flex
+            использовать grid. Или разделить классы более удобным способом.
+            На каждом шаге проекта имеет смысл посмотреть на него с высоты и
+            снова оценить.
+          </p>
+        </div>
+        <div class="post__actions">
+          <button class="post__heart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" class="heart-icon">
+              <g class="heart-group">
+                <path fill="none" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" class="heart-outline"/>
+                <path fill="none" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" class="heart-fill"/>
+                <path d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" class="heart-center"/>
+              </g>
+              <path fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" class="heart-sparks"/>
+            </svg>
+          </button>
+          <button class="post__like-btn main-btn">
+            <span class="btn-label">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <h2 class="post__header">3 спринт: Когда опускаются руки</h2>
+      <div class="post__image-wrapper">
+        <span class="post__image-label">&lt;life-style: none;&gt;</span>
+        <img
+                class="post__image img-filter__gray-bright"
+                src="images/image.png"
+                alt="Фотография кофейни, на переднем плане мужчина работает за ноутбуком."
+        />
+      </div>
+      <div class="post__content">
+        <div class="post__text-wrapper">
+          <p class="post__text">
+            Во время учёбы часто возникает чувство, когда не знаешь, за что
+            хвататься. Вроде и проектную пора сдавать, и задачи хочется
+            порешать, и в теории получше разобраться, и жизнь не забыть
+            пожить. В такие моменты очень нужна концентрация. Вспомните,
+            откуда вы её черпали.
+          </p>
+          <p class="post__text">
+            Начало нового спринта - всегда стресс. Нужно успеть всё, и
+            работа поджимает и друзья зовут в бар, любимой девушке не
+            хватает внимания... Хочется клонировать себя и отправить каждый
+            клон по своим делам! Но к сожалению (или к счастью), такой
+            технологии ещё не придумали :) Поэтому приходилось быть в 3
+            местах сразу, успевать все дела и работать на 150%.
+          </p>
+        </div>
+        <div class="post__actions">
+          <button class="post__heart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" class="heart-icon">
+              <g class="heart-group">
+                <path fill="none" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" class="heart-outline"/>
+                <path fill="none" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" class="heart-fill"/>
+                <path d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" class="heart-center"/>
+              </g>
+              <path fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" class="heart-sparks"/>
+            </svg>
+          </button>
+          <button class="post__like-btn main-btn">
+            <span class="btn-label">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <article class="post">
+      <h2 class="post__header">«Сейчас я здесь»</h2>
+      <div class="post__image-wrapper">
+        <span class="post__image-label">&lt;experience&gt;</span>
+        <img
+                class="post__image img-filter__saturate"
+                src="images/image.png"
+                alt="Фотография мужчины, которой занимается скалолазнием на тренировочном подъеме."
+        />
+      </div>
+      <div class="post__content">
+        <div class="post__text-wrapper">
+          <p class="post__text">
+            Сейчас вы уже очень много знаете о вёрстке. Но это только
+            начало. Во-первых, впереди ещё много материала про «красотищу».
+            Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка —
+            это целый мир. И этот мир постоянно меняется. Познать его
+            полностью не получится, но это тот случай, когда важен сам
+            процесс познания. Ведь часто путь — и есть результат.
+          </p>
+          <p class="post__text">
+            Я уже проделал большой путь, от полного чайника в
+            веб-разработке, до начинающего верстальщика с небольшим опытом.
+            Это приятное чувство хочется посмаковать дольше, но времени нет,
+            ведь впереди нас ждет еще много интересного!
+          </p>
+        </div>
+        <div class="post__actions">
+          <button class="post__heart-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" class="heart-icon">
+              <g class="heart-group">
+                <path fill="none" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z" class="heart-outline"/>
+                <path fill="none" d="M12 9H9v3h3V9Zm3 3h-3v3h3v-3Zm3-3h-3v3h3V9Zm-6 6H9v3h3v-3Zm3 0h-3v3h3v-3Zm0 3h-3v3h3v-3Zm3-6h-3v3h3v-3Zm0 9h-3v3h3v-3Zm0-3h-3v3h3v-3Zm9-9h3v3h-3V9Zm-3 0h3v3h-3V9Zm3 3h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm-3-3h3v3h-3V9Zm6 6h3v3h-3v-3Zm-3 0h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-3-6h3v3h-3v-3Zm0 9h3v3h-3v-3Zm0-3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0 3h-3v3h3v-3Z" class="heart-fill"/>
+                <path d="M18 15h-3v3h3v-3Zm3 0h3v3h-3v-3Zm0 0h-3v3h3v-3Zm0-3h-3v3h3v-3Zm0 6h-3v3h3v-3Z" class="heart-center"/>
+              </g>
+              <path fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z" class="heart-sparks"/>
+            </svg>
+          </button>
+          <button class="post__like-btn main-btn">
+            <span class="btn-label">Like</span>
+          </button>
+        </div>
+      </div>
+    </article>
+  </section>
+</main>
+
+<footer class="page-footer content-block">
+  <button class="page-footer__btn main-btn" type="button" onclick="window.saveDialog.showModal()" aria-controls="saveDialog">
+    <svg class="page-footer__btn-icon" viewBox="0 0 39 39">
+      <use href="svg/floppy.svg#floppy" />
+    </svg>
+    <span class="btn-label">Сохранить на память</span>
+  </button>
+</footer>
+
+<dialog class="modal-dialog" id="saveDialog">
+  <form class="modal-dialog__form" method="dialog">
+    <svg class="modal-dialog__icon" viewBox="0 0 39 39">
+      <use href="svg/floppy.svg#floppy" />
+    </svg>
+    <p class="modal-dialog__text">Вставьте дискету, чтобы продолжить</p>
+    <button class="modal-dialog__btn main-btn" type="submit">
+      <span class="btn-label">ок</span>
+    </button>
+  </form>
+</dialog>
+
+<script src="./scripts/heart.js"></script>
+</body>
 </html>
