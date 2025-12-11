@@ -1,105 +1,45 @@
-/* Этот скрипт использует такие имена классов:
+/* этот скрипт использует такие имена классов:
 ✦ heart-icon — для svg-иконки анимированного сердца
-✦ post__like-btn — для кнопки Like
-✦ post__heart-btn — для кнопки сердца
-✦ heart-active — для обозначения состояния лайкнутой иконки
-✦ btn-label — для текста внутри кнопки Like
+✦ post__like-btn — для кнопки Like рядом с иконкой
+✦ post__heart-btn — для кнопки, оборачивающей иконку
+✦ heart-active — для обозначения состояния лайкнутой иконки в виде сердца
+✦ btn-label — для обозначения текстового элемента внутри кнопки
+Если эти классы поменять в HTML, скрипт перестанет работать. Будьте аккуратны.
 */
 
-document.addEventListener('DOMContentLoaded', function() {
-  // Находим все элементы сердечек и кнопок
-  const heartButtons = document.querySelectorAll('.post__heart-btn');
-  const likeButtons = document.querySelectorAll('.post__like-btn');
+const likeHeartArray = document.querySelectorAll('.heart-icon');
+const likeButtonArray = document.querySelectorAll('.post__like-btn');
+const iconButtonArray = document.querySelectorAll('.post__heart-btn');
 
-  // Обработчик для кнопок сердца
-  heartButtons.forEach((heartBtn, index) => {
-    heartBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-
-      const heartIcon = this.querySelector('.heart-icon');
-      if (heartIcon) {
-        heartIcon.classList.toggle('heart-active');
-        updateLikeButtonText(index);
-      }
-    });
-  });
-
-  // Обработчик для кнопок Like
-  likeButtons.forEach((likeBtn, index) => {
-    likeBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-
-      const heartIcon = heartButtons[index].querySelector('.heart-icon');
-      if (heartIcon) {
-        heartIcon.classList.toggle('heart-active');
-        updateLikeButtonText(index);
-      }
-    });
-  });
-
-  // Функция для обновления текста кнопки Like
-  function updateLikeButtonText(index) {
-    const heartIcon = heartButtons[index].querySelector('.heart-icon');
-    const likeBtn = likeButtons[index];
-    const btnLabel = likeBtn.querySelector('.btn-label');
-
-    if (!heartIcon || !btnLabel) return;
-
-    if (heartIcon.classList.contains('heart-active')) {
-      setTimeout(() => {
-        btnLabel.textContent = 'Unlike';
-      }, 500);
-    } else {
-      setTimeout(() => {
-        btnLabel.textContent = 'Like';
-      }, 500);
-    }
-  }
-
-  // Обработка модального окна
-  const saveBtn = document.querySelector('.page-footer__btn');
-  const saveDialog = document.getElementById('saveDialog');
-  const okBtn = document.querySelector('.modal-dialog__btn');
-  const modalForm = document.querySelector('.modal-dialog__form');
-
-  // Открытие модального окна
-  if (saveBtn) {
-    saveBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      if (saveDialog) {
-        saveDialog.showModal();
-      }
-    });
-  }
-
-  // Закрытие модального окна при клике на ОК
-  if (okBtn) {
-    okBtn.addEventListener('click', function(e) {
-      e.preventDefault();
-      if (saveDialog) {
-        saveDialog.close();
-      }
-    });
-  }
-
-  // Закрытие модального окна при отправке формы
-  if (modalForm) {
-    modalForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      if (saveDialog) {
-        saveDialog.close();
-      }
-    });
-  }
-
-  // Закрытие модального окна при клике вне его
-  if (saveDialog) {
-    saveDialog.addEventListener('click', function(e) {
-      if (e.target === this) {
-        this.close();
-      }
-    });
-  }
+iconButtonArray.forEach((iconButton, index) => {
+  iconButton.onclick = (e) => {
+    e.preventDefault();
+    toggleIsLiked(likeHeartArray[index], likeButtonArray[index]);
+  };
 });
+
+likeButtonArray.forEach((button, index) => {
+  button.onclick = (e) => {
+    e.preventDefault();
+    toggleIsLiked(likeHeartArray[index], button);
+  };
+});
+
+function toggleIsLiked(heart, button) {
+  heart.classList.toggle('heart-active');
+  setButtonText(heart, button);
+}
+
+function setButtonText(heart, button) {
+  if ([...heart.classList].includes('heart-active')) {
+    setTimeout(
+        () => (button.querySelector('.btn-label').textContent = 'Unlike'),
+        500
+    );
+  } else {
+    setTimeout(
+        () => (button.querySelector('.btn-label').textContent = 'Like'),
+        500
+    );
+  }
+}
